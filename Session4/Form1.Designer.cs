@@ -45,12 +45,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtFind = new System.Windows.Forms.TextBox();
+            this.lblFindTitle = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cmbSort = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(345, 250);
+            this.btnSave.Location = new System.Drawing.Point(211, 250);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 33);
             this.btnSave.TabIndex = 4;
@@ -61,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(309, 57);
+            this.label1.Location = new System.Drawing.Point(427, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 1;
@@ -69,7 +74,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(203, 84);
+            this.txtName.Location = new System.Drawing.Point(321, 91);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(100, 21);
             this.txtName.TabIndex = 1;
@@ -77,7 +82,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(309, 84);
+            this.label2.Location = new System.Drawing.Point(427, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 3;
@@ -86,7 +91,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(309, 138);
+            this.label3.Location = new System.Drawing.Point(427, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 7;
@@ -94,7 +99,7 @@
             // 
             // txtFamily
             // 
-            this.txtFamily.Location = new System.Drawing.Point(203, 111);
+            this.txtFamily.Location = new System.Drawing.Point(321, 118);
             this.txtFamily.Name = "txtFamily";
             this.txtFamily.Size = new System.Drawing.Size(100, 21);
             this.txtFamily.TabIndex = 2;
@@ -102,7 +107,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(309, 111);
+            this.label4.Location = new System.Drawing.Point(427, 118);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 13);
             this.label4.TabIndex = 5;
@@ -130,7 +135,7 @@
             // 
             // mtbMobile
             // 
-            this.mtbMobile.Location = new System.Drawing.Point(203, 138);
+            this.mtbMobile.Location = new System.Drawing.Point(321, 145);
             this.mtbMobile.Mask = "###########";
             this.mtbMobile.Name = "mtbMobile";
             this.mtbMobile.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -139,7 +144,7 @@
             // 
             // mtbCode
             // 
-            this.mtbCode.Location = new System.Drawing.Point(203, 57);
+            this.mtbCode.Location = new System.Drawing.Point(321, 64);
             this.mtbCode.Mask = "#####";
             this.mtbCode.Name = "mtbCode";
             this.mtbCode.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -150,7 +155,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(330, 60);
+            this.label5.Location = new System.Drawing.Point(448, 67);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(13, 13);
             this.label5.TabIndex = 8;
@@ -168,7 +173,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(93, 165);
+            this.txtAddress.Location = new System.Drawing.Point(211, 172);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(210, 72);
@@ -177,7 +182,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(309, 165);
+            this.label6.Location = new System.Drawing.Point(427, 172);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(39, 13);
             this.label6.TabIndex = 11;
@@ -185,7 +190,8 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(345, 12);
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Location = new System.Drawing.Point(463, 19);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 12;
@@ -196,10 +202,65 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 289);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 321);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(408, 181);
+            this.dataGridView1.Size = new System.Drawing.Size(675, 197);
             this.dataGridView1.TabIndex = 13;
+            // 
+            // txtFind
+            // 
+            this.txtFind.Location = new System.Drawing.Point(539, 294);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(100, 21);
+            this.txtFind.TabIndex = 14;
+            // 
+            // lblFindTitle
+            // 
+            this.lblFindTitle.AutoSize = true;
+            this.lblFindTitle.Location = new System.Drawing.Point(645, 294);
+            this.lblFindTitle.Name = "lblFindTitle";
+            this.lblFindTitle.Size = new System.Drawing.Size(40, 13);
+            this.lblFindTitle.TabIndex = 15;
+            this.lblFindTitle.Text = "عنوان :";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "کد",
+            "نام",
+            "نام خانوادگی",
+            "همراه",
+            "آدرس"});
+            this.comboBox1.Location = new System.Drawing.Point(412, 294);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 16;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(211, 284);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "جستجو";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // cmbSort
+            // 
+            this.cmbSort.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSort.FormattingEnabled = true;
+            this.cmbSort.Items.AddRange(new object[] {
+            "صعودی",
+            "نزولی"});
+            this.cmbSort.Location = new System.Drawing.Point(12, 296);
+            this.cmbSort.Name = "cmbSort";
+            this.cmbSort.Size = new System.Drawing.Size(121, 21);
+            this.cmbSort.TabIndex = 18;
+            this.cmbSort.SelectedIndexChanged += new System.EventHandler(this.cmbSort_SelectedIndexChanged);
             // 
             // Form1
             // 
@@ -207,7 +268,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(432, 482);
+            this.ClientSize = new System.Drawing.Size(699, 530);
+            this.Controls.Add(this.cmbSort);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtFind);
+            this.Controls.Add(this.lblFindTitle);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtAddress);
@@ -256,6 +322,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtFind;
+        private System.Windows.Forms.Label lblFindTitle;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox cmbSort;
     }
 }
 
